@@ -1,0 +1,282 @@
+:root {
+  --link-active: #2196f3;
+}
+:root {
+  --small-text: #757575;
+}
+:root {
+  --white-text: #ffffff;
+}
+:root {
+  --default-text: #212121;
+}
+:root {
+  --background-text-temp: #2f303a;
+}
+:root {
+  --background-button: #f5f4fa;
+}
+:root {
+  --footer-text: rgb(255, 255, 255, 0.3);
+}
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+h1 {
+  margin: 0;
+}
+h2 {
+  margin: 0;
+}
+h3 {
+  margin: 0;
+}
+h4 {
+  margin: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--default-text);
+  width: 1600px;
+}
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+  color: inherit;
+  line-height: 1.17;
+}
+.blue {
+  color: var(--link-active);
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.link a {
+  text-decoration: none;
+  color: inherit;
+}
+.link a:hover {
+  color: var(--link-active);
+}
+.link a:focus {
+  color: var(--link-active);
+}
+
+.navigation {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+}
+.small {
+  color: var(--small-text);
+}
+.active:hover {
+  color: var(--link-active);
+}
+.active:focus {
+  color: var(--link-active);
+}
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  color: var(--white-text);
+  background-color: var(--background-text-temp);
+  text-align: center;
+  line-height: 1.37;
+}
+.main-button {
+  font-weight: 700;
+  font-size: 16px;
+  font-family: inherit;
+  line-height: 1.9;
+  border: none;
+}
+.paragraph-title {
+  font-size: 14px;
+  line-height: 1.17;
+  margin-bottom: 10px;
+  width: 270px;
+}
+.paragraph-text {
+  font-size: 14px;
+  line-height: 1.7;
+}
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  margin-bottom: 50px;
+}
+.name {
+  font-weight: 500;
+  line-height: 1.17;
+}
+.footer {
+  color: var(--white-text);
+}
+.footer-text {
+  line-height: 1.7;
+  font-size: 14px;
+  padding: 0;
+}
+.background {
+  background-color: var(--background-text-temp);
+}
+.fade {
+  color: var(--footer-text);
+}
+.filters button {
+  background-color: var(--background-button);
+  font-weight: 500;
+  font-size: 16px;
+  font-family: inherit;
+  line-height: 1.6;
+  border: none;
+  background: #f5f4fa;
+  border-radius: 4px;
+  padding: 6px 22px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: var(--link-active);
+  color: var(--white-text);
+}
+.picture h3 {
+  font-size: 18px;
+  line-height: 2;
+}
+.picture span {
+  line-height: 1.9;
+}
+button:focus {
+  background-color: var(--link-active);
+  color: var(--white-text);
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.header-border {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo-top {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  width: 145px;
+}
+.menu {
+  display: flex;
+  padding: 32px 371px 32px 93px;
+  margin: auto;
+}
+.menu > .item {
+  width: 53px;
+}
+.menu > .item:not(:last-child) {
+  margin-right: 46px;
+}
+.navigation-top {
+  margin-right: 50px;
+}
+.main-header {
+  padding-bottom: 30px;
+  margin: 0 auto;
+  width: 696px;
+}
+.main-button {
+  padding: 10px 41px 10px 42px;
+  border-radius: 4px;
+  width: 200px;
+}
+.section-1 {
+  padding-bottom: 106px;
+  padding-top: 106px;
+}
+.section-about > .item:not(:last-child) {
+  margin-right: 30px;
+}
+.flexbox {
+  display: flex;
+  justify-content: space-evenly;
+}
+.text-center {
+  text-align: center;
+}
+.footer-space {
+  padding-top: 60px;
+}
+.address-position {
+  margin-top: 20px;
+  padding-bottom: 60px;
+}
+.background-darker {
+  background-color: #f5f4fa;
+}
+.image-margin {
+  margin: 0;
+}
+.section-team > .item:not(:last-child) {
+  margin-right: 30px;
+}
+.section-team > .item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+}
+.figcaption > .name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.figcaption > .small {
+  display: block;
+  padding-bottom: 30px;
+}
+.footer-text > .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.filters {
+  justify-content: center;
+  margin-bottom: 50px;
+  padding: 0;
+}
+.filters > .item:not(:last-child) {
+  margin-right: 8px;
+}
+.picture {
+  padding: 0;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.figure-table > h3 {
+  padding: 20px 24px 4px 24px;
+}
+.figure-table > .small {
+  display: block;
+  padding: 0 24px 20px 24px;
+}
+
+.figure-table {
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+  border-right: 1px solid rgba(238, 238, 238, 1);
+  border-left: 1px solid rgba(238, 238, 238, 1);
+}
+.no-gap {
+  display: block;
+}
