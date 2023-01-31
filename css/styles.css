@@ -370,7 +370,7 @@ button:focus {
 .footer-social > .flexbox {
   justify-content: space-between;
 }
-.footer-social > span > .paragraph-title {
+.footer-social > .paragraph-title {
   margin-bottom: 20px;
   color: #ffffff;
 }
