@@ -60,6 +60,11 @@ body {
   font-size: 14px;
   line-height: 1.17;
 }
+.contact-links {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+}
 .navigation > .item > a {
   color: inherit;
   text-decoration: none;
@@ -174,20 +179,18 @@ button:focus {
   padding-bottom: 25px;
   width: 145px;
 }
-.menu {
+.navigation {
   display: flex;
   padding: 32px 371px 32px 93px;
   margin: auto;
 }
-.menu > .item {
+.navigation > .item {
   width: 53px;
 }
-.menu > .item:not(:last-child) {
+.navigation > .item:not(:last-child) {
   margin-right: 46px;
 }
-.navigation > .margin-fix {
-  margin-right: 30px;
-}
+
 .main-header {
   padding-bottom: 30px;
   margin: 0 auto;
@@ -346,9 +349,11 @@ button:focus {
   cursor: pointer;
 }
 .icon-team {
+  display: flex;
   border-radius: 50%;
   fill: #afb1b8;
   padding: 12px;
+  margin-bottom: 30px;
 }
 .icon-team:hover {
   background-color: #2196f3;
@@ -371,4 +376,24 @@ button:focus {
 }
 .footer-social > ul > li:not(:last-child) {
   margin-right: 10px;
+}
+.contact-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--small-text);
+  text-decoration: none;
+}
+.contact-links:hover,
+.contact-links:focus,
+.contact-links:active {
+  color: var(--link-active);
+}
+.header-icons {
+  --color2: currentColor;
+  fill: var(--color2);
+  margin-right: 10px;
+}
+.header > a:last-child {
+  margin-left: 30px;
 }
