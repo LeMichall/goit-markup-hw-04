@@ -27,28 +27,24 @@
           ><span class="blue">Web</span>Studio</a
         >
         <nav>
-          <ul class="navigation link menu">
+          <ul class="navigation menu">
             <li class="item"><a href="./index.html">Agencja</a></li>
             <li class="item"><a href="./portfolio.html">Portfolio</a></li>
             <li class="item"><a href="#">Kontakt</a></li>
           </ul>
         </nav>
-        <a
-          class="navigation-top navigation small link active"
-          href="mailto:info@devstudio.com"
-        >
+        <div class="navigation">
           <svg class="envelope">
             <use href="./images/icons.svg#icon-envelope"></use>
           </svg>
-          info@devstudio.com</a
-        >
-
-        <svg class="smartphone">
-          <use href="./images/icons.svg#icon-smartphone"></use>
-        </svg>
-        <a class="navigation small link active" href="tel:+48111111111"
-          >+48 111 111 111</a
-        >
+          <a class="small margin-fix" href="mailto:info@devstudio.com">
+            info@devstudio.com</a
+          >
+          <svg class="smartphone">
+            <use href="./images/icons.svg#icon-smartphone"></use>
+          </svg>
+          <a class="small" href="tel:+48111111111">+48 111 111 111</a>
+        </div>
       </div>
     </header>
     <main>
@@ -164,12 +160,22 @@
               </figure>
               <ul class="flexbox">
                 <li>
-                  <svg class="icon-team" width="44" height="44">
+                  <svg
+                    class="icon-team"
+                    width="44"
+                    height="44"
+                    viewbox="0 0 88 88"
+                  >
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </li>
                 <li>
-                  <svg class="icon-team" width="44" height="44">
+                  <svg
+                    class="icon-team"
+                    width="44"
+                    height="44"
+                    viewbox="0 0 32 32"
+                  >
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </li>
@@ -272,30 +278,59 @@
     </main>
     <!--Footer-->
     <footer class="background">
-      <div class="container footer-space">
-        <a class="logo footer" href="#"><span class="blue">Web</span>Studio</a>
-        <address class="address-position">
-          <ul class="footer-text">
-            <li class="item">
-              <a
-                class="footer active"
-                href="https://goo.gl/maps/qj117W8FbM5sxVwv7"
-                target="_blank"
-                >m. Warszawa, Aleje Jerozolimskie 21</a
-              >
+      <div class="container footer-space flexbox">
+        <div class="margin-right">
+          <a class="logo footer" href="#"
+            ><span class="blue">Web</span>Studio</a
+          >
+          <address class="address-position">
+            <ul class="footer-text">
+              <li class="item">
+                <a
+                  class="footer active"
+                  href="https://goo.gl/maps/qj117W8FbM5sxVwv7"
+                  target="_blank"
+                  >m. Warszawa, Aleje Jerozolimskie 21</a
+                >
+              </li>
+              <li class="item">
+                <a class="footer fade active" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="item">
+                <a class="footer fade active" href="tel:+48111111111"
+                  >+48 111 111 111</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-social">
+          <span><h3 class="paragraph-title">DOŁĄCZ DO NAS</h3></span>
+          <ul class="flexbox social-spacing">
+            <li>
+              <svg class="icon-team icon-footer" width="44" height="44">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
             </li>
-            <li class="item">
-              <a class="footer fade active" href="mailto:info@example.com"
-                >info@example.com</a
-              >
+            <li>
+              <svg class="icon-team icon-footer" width="44" height="44">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
             </li>
-            <li class="item">
-              <a class="footer fade active" href="tel:+48111111111"
-                >+48 111 111 111</a
-              >
+            <li>
+              <svg class="icon-team icon-footer" width="44" height="44">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="icon-team icon-footer" width="44" height="44">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>

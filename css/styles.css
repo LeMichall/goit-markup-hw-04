@@ -55,35 +55,30 @@ body {
 .blue {
   color: var(--link-active);
 }
-.link {
-  text-decoration: none;
-  color: inherit;
-}
-.link a {
-  text-decoration: none;
-  color: inherit;
-}
-.link a:hover {
-  color: var(--link-active);
-}
-.link a:focus {
-  color: var(--link-active);
-}
-
 .navigation {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
 }
+.navigation > .item > a {
+  color: inherit;
+  text-decoration: none;
+}
+.navigation > .item > a:hover,
+.navigation > .item > a:focus {
+  color: var(--link-active);
+}
+.navigation > a {
+  text-decoration: none;
+}
+.navigation > a:hover,
+.navigation > a:focus {
+  color: var(--link-active);
+}
 .small {
   color: var(--small-text);
 }
-.active:hover {
-  color: var(--link-active);
-}
-.active:focus {
-  color: var(--link-active);
-}
+
 h1 {
   font-weight: 900;
   font-size: 44px;
@@ -190,8 +185,8 @@ button:focus {
 .menu > .item:not(:last-child) {
   margin-right: 46px;
 }
-.navigation-top {
-  margin-right: 50px;
+.navigation > .margin-fix {
+  margin-right: 30px;
 }
 .main-header {
   padding-bottom: 30px;
@@ -219,7 +214,12 @@ button:focus {
 }
 .footer-space {
   padding-top: 60px;
+  justify-content: flex-start;
 }
+.margin-right {
+  margin-right: 70px;
+}
+
 .address-position {
   margin-top: 20px;
   padding-bottom: 60px;
@@ -352,4 +352,23 @@ button:focus {
 }
 .icon-team:hover {
   background-color: #2196f3;
+  fill: #ffffff;
+  cursor: pointer;
+}
+.icon-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+}
+.footer-social {
+  width: 206px;
+}
+.footer-social > .flexbox {
+  justify-content: space-between;
+}
+.footer-social > span > .paragraph-title {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.footer-social > ul > li:not(:last-child) {
+  margin-right: 10px;
 }
